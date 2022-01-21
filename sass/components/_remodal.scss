@@ -1,0 +1,74 @@
+.remodal-form {
+	width: 450px;
+	max-width: 100%;
+}
+.remodal-close:before {
+	display: none;
+}
+.remodal_form {
+	width: 450px;
+	max-width: 100%;
+}
+.remodal-close {
+	left: auto;
+	right: 20px;
+	top: 20px;
+	width: 20px;
+	height: 20px;
+	background-image: url('../img/remodal_close.svg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+.remodal-form__header {
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 35px;
+	text-align: center;
+	letter-spacing: 0.2px;
+	color: var(--main-color);
+	margin-bottom: 40px;
+}
+.input-hidden {
+	display: none !important;
+}
+.remodal-form__form {
+	width: 100%;
+	input {
+		width: 100%;
+		display: block;
+		margin-bottom: 30px;
+		border: 1px solid #DFDFDF;
+		box-sizing: border-box;
+		line-height: 30px;
+		padding: 10px 20px;
+		color: var(--main-color);
+		font-size: 16px;
+		&:focus {
+			border: 1px solid #575656;
+		}
+		&::placeholder {
+			color: var(--main-color);
+			opacity: 0.8;
+		}
+	}
+	label {
+		display: block;
+		margin-bottom: 15px;
+		font-style: normal;
+		font-weight: normal;
+		text-align: left;
+		font-size: 16px;
+		line-height: 19px;
+		color: var(--main-color);
+	}
+	button {
+		width: 100% !important;
+	}
+}
+@media screen and (max-width: 600px){
+    .remodal {
+    	padding-left: 10px;
+    	padding-right: 10px;
+    }
+}

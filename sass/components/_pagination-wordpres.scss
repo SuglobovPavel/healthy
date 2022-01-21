@@ -1,0 +1,56 @@
+.pagination-wordpres {
+	padding-top: 50px;
+	.screen-reader-text {
+		display: none;
+	}
+	.nav-links {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		a {
+			background: var(--contrast-color);
+			border: 1px solid  #E0E0E0;
+			width: 32px;
+			height: 32px;
+			line-height: 32px;
+			font-style: normal;
+			font-weight: normal;
+			font-size: 16px;
+			text-align: center;
+			color: var(--main-color);
+			margin-left: 4px;
+			margin-right: 4px;
+			&:hover {
+				border: 1px solid var(--accent-color);
+			}
+		}
+		.current {
+			background: var(--accent-color);
+			border: 1px solid var(--accent-color);
+			width: 32px;
+			height: 32px;
+			line-height: 32px;
+			font-style: normal;
+			font-weight: normal;
+			font-size: 16px;
+			text-align: center;
+			color: var(--contrast-color);
+			margin-left: 4px;
+			margin-right: 4px;
+		}
+		.next, .prev {
+			font-size: 0px;
+			color: transparent;
+		}
+		.next {
+			background-image: url('../img/pagination_wordpres_next.svg');
+			background-position: center;
+			background-repeat: no-repeat;
+		}
+		.prev {
+			background-image: url('../img/pagination_wordpre_prev.svg');
+			background-position: center;
+			background-repeat: no-repeat;
+		}
+	}
+}

@@ -1,0 +1,53 @@
+
+.remodal-thanks {
+	background: #36B37E;
+	border-radius: 10px;
+	width: 450px;
+	max-width: 100%;
+	padding: 50px 30px;
+	.remodal-close {
+		background-image: url('../img/remodal_close_white.svg');
+		background-position: center;
+		background-repeat: no-repeat;
+	}
+}
+.remodal-thanks__wrap {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.remodal-thanks__icon {
+	width: 32px;
+	height: 21px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	margin-right: 26px;
+	min-width: 32px;
+}
+.remodal-thnaks__header {
+	font-style: normal;
+	font-weight: normal;
+	font-size: 20px;
+	line-height: 22px;
+	margin-bottom: 5px;
+	text-align: left;
+	color: #FFFFFF;
+}
+.remodal_thanks__text {
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	text-align: left;
+	line-height: 16px;
+	color: #FFFFFF;
+}
+@media screen and (max-width: 600px){
+    .remodal_thanks {
+    	padding-left: 20px;
+    	padding-right: 10px;
+    }
+    .remodal_thanks__icon {
+    	margin-right: 20px;
+    }
+}

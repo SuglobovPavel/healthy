@@ -1,0 +1,7 @@
+{
+   "editor.parameterHints.enabled": false,
+   "editor.inlayHints.enabled": false,
+   "editor.hover.enabled": false,
+   "javascript.inlayHints.parameterNames.suppressWhenArgumentMatchesName": false,
+   "typescript.inlayHints.parameterNames.suppressWhenArgumentMatchesName": false
+}
