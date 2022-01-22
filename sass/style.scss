@@ -1,5 +1,5 @@
 @import "./base/_reload.scss";
-// @import "./base/_fonts.scss";
+@import "./base/_fonts.scss";
 
 @import "../library/animateCSS/animate.css";
 @import "../library/fancybox/jquery.fancybox.min.css";
@@ -19,6 +19,7 @@
 @import "./components/_select.scss";
 @import "./components/_hamburger-3-line.scss";
 @import "./components/_pagination-wordpres.scss";
+@import "./components/_text.scss";
 
 @import "./sections/_header.scss";
 @import "./sections/_hero.scss";

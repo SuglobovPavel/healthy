@@ -7,7 +7,135 @@
 		<link rel="stylesheet" href="css/style.css">
 	</head>
 	<body>
-		
+		<div class="page-container">
+			<header class="main-header">
+				<div class="header-body">
+					<div class="wrapper header-body__wrapper">
+						<div class="header__left">
+							<div class="header-hamburger">
+								<div class="header-hamburger__dots">
+									<div class="header-hamburger__dot"></div>
+									<div class="header-hamburger__dot"></div>
+									<div class="header-hamburger__dot"></div>
+									<div class="header-hamburger__dot"></div>
+								</div>
+							</div>
+						</div>
+						<a href="#" class="header-logo">
+							<img class="lazy" data-src="img/logo.svg" src="img/placeholder.png" alt="">
+						</a>
+						<div class="header__right">
+							<a href="#" class="header-favourites">
+								<div class="header-favourites__count">0</div>
+								<svg>
+									<use href="img/sprite.svg#icon-header-like"></use>
+								</svg>
+							</a>
+							<div class="header-search">
+								<div class="header-search__but-open">
+									<svg>
+										<use href="img/sprite.svg#icon-header-search"></use>
+									</svg>
+								</div>
+								<div class="header-search__form">
+									<form action="#">
+										<input type="text" placeholder="Искать ...">
+										<button class="header-search__form-button">
+											<svg>
+												<use href="img/sprite.svg#icon-header-search"></use>
+											</svg>
+										</button>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="header-mobile">
+					<div class="wrapper">
+						<a href="#" class="header-favourites">
+							<div class="header-favourites__count">0</div>
+							<svg>
+								<use href="img/sprite.svg#icon-header-like"></use>
+							</svg>
+						</a>
+						<nav class="main-nav">
+							<ul>
+								<li>
+									<a href="#">Home Page</a>
+								</li>
+								<li>
+									<a href="#">Private Label</a>
+								</li>
+								<li>
+									<a href="#">Our Lab</a>
+								</li>
+								<li>
+									<a href="#">Manufacturing</a>
+								</li>
+								<li>
+									<a href="#">Sustainability</a>
+								</li>
+								<li>
+									<a href="#">Our Brands</a>
+								</li>
+								<li>
+									<a href="#">About Us</a>
+								</li>
+								<li>
+									<a href="#">Contact Us</a>
+								</li>
+							</ul>
+						</nav>
+						<div class="menu-category">
+							<ul>
+								<li>
+									<a href="#">Choose your ingredients</a>
+								</li>
+								<li>
+									<a href="">Choose your package</a>
+								</li>
+								<li>
+									<a href="#">Ready to order formulas</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</header>
+			<main>
+				<section class="section hero">
+					<video autoplay muted loop class="video-background">
+						<source src="video/video_background.mp4" type="video/mp4">
+					</video>
+
+					<div class="wrapper">
+						<div class="hero-content">
+							<h1 class="main-title">Create your own beauty product is easier, then you think</h1>
+							<div class="hero-text">
+								<p>We are here to help</p>
+							</div>
+
+							<a href="#" class="hero-but">
+								<svg>
+									<use href="img/sprite.svg#icon-hero-but"></use>
+								</svg>
+							</a>
+						</div>
+					</div>
+				</section>
+			</main>
+			<footer></footer>
+		</div>
+
+
+		<script src="library/jQuerry/jq-3-3-1.min.js"></script>
+		<script src="library/jQuerryFormStyler/jquery.formstyler.min.js"></script>
+		<script src="library/remodal/remodal.js"></script>
+		<script src="library/Wow/wow.min.js"></script>
+		<script src="library/lazy/lazyload.min.js"></script>
+		<script src="library/slick/slick.min.js"></script>
+		<script src="library/fancybox/jquery.fancybox.min.js"></script>
 		<script src="js/script.js"></script>
 	</body>
 </html>

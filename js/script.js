@@ -12,6 +12,25 @@ $(document).ready(function(){
     }
   });
 
+  $(".header-search__but-open").on("click", function(){
+    $(this).parents(".header-search").addClass("active");
+    if($(".header-hamburger").hasClass("is-active")){
+      $(".header-hamburger").removeClass('is-active');
+      $(".header-mobile").removeClass('active');
+      $(".main-header").removeClass('active');  
+    }
+  });
+
+  $(document).mouseup(function (e){ // событие клика по веб-документу
+    var div = $(".header-search"); // тут указываем ID элемента
+    if (!div.is(e.target) // если клик был не по нашему блоку
+      && div.has(e.target).length === 0) { // и не по его дочерним элементам
+          if($(".header-search").hasClass("active")){
+            $(".header-search").removeClass("active");
+          }
+      }
+  });
+
   var wow = new WOW(
     {
       boxClass:     'wow',      // animated element css class (default is wow)
@@ -30,15 +49,15 @@ $(document).ready(function(){
   wow.init();
 
 	/*Мобильный гамбургер*/
- $(".hamburger").click(function(){
-   $(".hamburger").toggleClass('is-active');
-   $(".mobile_nav").toggleClass('active');
-   $("header").toggleClass('active');
+ $(".header-hamburger").click(function(){
+   $(".header-hamburger").toggleClass('is-active');
+   $(".header-mobile").toggleClass('active');
+   $(".main-header").toggleClass('active');
  });
- $(".main_menu ul li a").click(function(){
-   $(".hamburger").removeClass('is-active');
-   $(".mobile_nav").removeClass('active');
-   $("header").removeClass('active');
+ $(".main-menu ul li a").click(function(){
+   $(".header-hamburger").removeClass('is-active');
+   $(".header-mobile").removeClass('active');
+   $(".main-header").removeClass('active');
  });
 
    var lazyLoadInstance =  new  LazyLoad ({
