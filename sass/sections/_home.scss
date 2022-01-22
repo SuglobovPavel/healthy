@@ -215,6 +215,9 @@
       line-height: 50px;
       margin-bottom: 10px;
    }
+   .charge__text {
+      width: 100%;
+   }
 }
 @media screen and (max-width: 1100px) {
    .charge__left {
@@ -234,6 +237,51 @@
    }
    .hero-text {
       font-size: 28px;
+   }
+   .charge__text {
+      text-align: left;
+   }
+   .charge__flex {
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+   }
+   .charge__left {
+      width: 100%;
+      padding-right: 0px;
+      margin-bottom: 17px;
+   }
+   .charge__left-text {
+      display: none;
+   }
+   .charge-slick__image {
+      height: 300px;
+   }
+   .slick-dots li {
+      width: 11px;
+      height: 11px;
+      margin-left: 9px;
+      margin-right: 9px;
+   }
+   .charge__right {
+      width: 100%;
+   }
+   .charge__wrapper-for-slick {
+      margin-left: -15px;
+      margin-right: -15px;
+      width: calc(100% + 30px);
+   }
+   .charge__wrapper-for-slick .slick-dots {
+      padding-left: 0px;
+      justify-content: center;
+   }
+   .charge-slick__title {
+      font-size: 35px;
+      padding-left: 0px;
+   }
+   .charge-slick__description {
+      padding-left: 0px;
+      margin-bottom: 5px;
    }
 }
 @media screen and (max-width: 800px) {
