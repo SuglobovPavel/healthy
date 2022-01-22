@@ -62,23 +62,60 @@ $(document).ready(function(){
 
    var lazyLoadInstance =  new  LazyLoad ({
     elements_selector :  " .lazy " 
-      // ... больше пользовательских настроек? 
     });
-  	/*
-  	Маска для номера телефона
 
-  	$("#m_8_phone").mask("+38 (099) 999-99-99");
-  	*/
 
-/*    
-    Contact form 7 - успешная отправка
 
-      $(document).ready(function(){ 
-        $('.wpcf7').on( 'wpcf7mailsent ', function( event ) { 
-          var inst = $('[data-remodal-id=remodal_thanks]').remodal(); // Обращаемся к всплывашке, чтобы открыть ответ меняем remodal_id на свой
-                  inst.open();      
-        });
-      });*/
+
+
+
+
+    
+
+
+
+
+    $('.charge-slick').slick({
+      arrows: false,
+      slidesToShow: 4,
+      focusOnSelect: true,
+      autoplay: false,
+      autoplaySpeed: 3000,
+      dots: true,
+      infinite: true,
+      responsive: [                     
+        {
+          breakpoint: 1300,
+            settings: {
+              slidesToShow: 2,
+          }
+        },
+        {
+          breakpoint: 600,
+            settings: {
+              slidesToShow: 1,
+          }
+        },
+      ]
+    });
+    var lazyLoadInstance2 =  new  LazyLoad ({
+      elements_selector :  " .charge-lazy" 
+       // ... больше пользовательских настроек? 
+   });
+    $('.charge-slick').on('afterChange', function(event, slick, currentSlide){
+      lazyLoadInstance2.update();	
+    });
+
+
+
+
+
+
+
+
+
+
+
 
 	/*
   	Плавный скрол
@@ -133,50 +170,6 @@ $(document).ready(function(){
 	  ]
 	});
 	*/
-
-
-	/*
-	Валидация - отправка формы ajax
-
-	$("form#idForm").validate({
-        rules: {
-            name: {
-                required: true,
-            },
-            email: {
-                required: true,
-                email: true,
-            },
-        },
-        messages: {
-            name: {
-                required: "Это поле обязательно для ввода",
-            },
-            email: {
-                required: "Это поле обязательно для ввода",
-                email: "Вы ввели некоректный email",
-            },
-        },
-        submitHandler: function () {
-            var formData2 =  $('form#idForm').serialize(); // Выбираем нашу форм, посылание на тег form
-            $.ajax({
-              url: '/wp-admin/admin-ajax.php', 
-              type: 'POST',
-              data: formData2 + '&action=my_form_action',  // У каждой формы свой action, который пишется после =
-              success: function() {
-                $("form#idForm input[type=text]").val(""); // Чистим формы после того как клиент отправил данные нам на почту
-                var inst = $('[data-remodal-id=remodal_id]').remodal(); // Обращаемся к всплывашке, чтобы открыть ответ меняем remodal_id на свой
-                  inst.open();                                               // remodal открытие
-                },
-              error: function() {
-                alert('Error');
-              }
-            });
-            return false;
-        }
-   });
-   */
-
 });
  $(document).ready(function(){ 
         $('.wpcf7').on( 'wpcf7mailsent ', function( event ) { 

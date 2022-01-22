@@ -1,0 +1,258 @@
+.video-background {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+
+
+.hero {
+   padding-top: 220px;
+   padding-bottom: 95px;
+}
+.hero-text {
+   font-size: 40px;
+   line-height: 55px;
+   margin-top: 10px;
+   text-transform: uppercase;
+   color: #009DBB;
+   margin-bottom: 50px;
+}
+.hero-content {
+   width: 80%;
+   margin-left: auto;
+   margin-right: auto;
+   .main-title {
+      mix-blend-mode: difference;
+   }
+}
+.hero-but {
+   display: block;
+   width: 210px;
+   height: 210px;
+   transition: 0.25s;
+   margin-left: auto;
+   margin-right: auto;
+   transform-origin: center;
+   svg {
+      width: 100%;
+      height: 100%;
+   }
+   &:hover {
+      transform: scale(1.2) rotate(180deg);
+   }
+}
+
+
+.charge__text {
+   width: 90%;
+   margin-left: auto;
+   margin-right: auto;
+   text-align: center;
+}
+.charge__flex {
+   display: flex;
+}
+
+.charge__left {
+   width: 38%;
+   position: relative;
+   z-index: 20;
+   padding-right: 20px;
+}
+.charge__right {
+   width: 62%;
+}
+.charge__left-title {
+   text-align: left;
+}
+.charge__left-text {
+   font-style: normal;
+   font-weight: bold;
+   position: absolute;
+   left: 0px;
+   bottom: -24px;
+   font-size: 260px;
+   line-height: 92.5%;
+   color: rgba(215, 215, 215, 0.25);
+   pointer-events: none;
+}
+.slick-dotted.slick-slider {
+   margin-bottom: 0px;
+}
+
+
+
+.charge__wrapper-for-slick {
+   width: 1850px;
+   .slick-track {
+      display: flex;
+      align-items: stretch;
+   }
+   .slick-dots {
+      justify-content: flex-start;
+      padding-left: 1px;
+   }
+}
+.charge-slick__slid {
+   padding-left: 15px;
+   padding-right: 15px;
+   height:inherit;
+}
+.charge-slick__slide-wrapper {
+   background: rgba(196, 196, 196, 0.3);
+   border-radius: 15px;
+   width: 100%;
+   padding-top: 40px;
+   padding-left: 20px;
+   padding-right: 20px;
+   padding-bottom: 20px;
+   height:inherit;
+   display: flex;
+   flex-direction: column;
+}
+.charge-slick__title {
+   font-weight: 300;
+   font-size: 48px;
+   line-height: 58px;
+   margin-bottom: 15px;
+   color: #2E2E2E;
+   padding-left: 35px;
+   padding-right: 15px;
+}
+.charge-slick__description {
+   font-weight: 300;
+   font-size: 21px;
+   line-height: 28px;
+   color: #000000;
+   margin-bottom: 10px;
+   padding-left: 35px;
+   padding-right: 15px;
+}
+.charge-slick__image {
+   margin-top: auto;
+   height: 500px;
+   img {
+      width: 100%;
+      height: 100%;
+      display: block;
+      object-fit: contain;
+      object-position: center bottom;
+   }
+}
+.slick-dots {
+   
+   bottom: -40px;
+}
+.slick-dots li button {
+   display: none;
+}
+.slick-dots li {
+   background: #EDEDED;
+   width: 16px;
+   height: 16px;
+   border-radius: 100%;
+   margin-left: 14px;
+   margin-right: 14px;
+   cursor: pointer;
+   user-select: none;
+   transition: 0.25s;
+   &:hover {
+      transform: scale(1.6);
+   }
+   &.slick-active {
+      background: var(--accent-color);
+      transform: scale(1.6);
+   }
+}
+@media screen and (max-width: 1800px) {
+   .hero {
+      padding-top: 180px;
+      padding-bottom: 80px;
+   }
+   .hero-text {
+      font-size: 35px;
+   }
+   .charge__left-text {
+      font-size: 200px;
+      bottom: -19px;
+   }
+   .charge-slick__image {
+      height: 420px;
+   }
+   .charge__wrapper-for-slick {
+      width: 1700px;
+   }
+}
+@media screen and (max-width: 1600px) {
+   .hero-but  {
+      width: 180px;
+      height: 180px;
+   }
+   .charge-slick__image {
+      height: 380px;
+   }
+   .charge-slick__title {
+      padding-left: 15px;
+      padding-right: 0px;
+   }
+   .charge-slick__description {
+      padding-left: 15px;
+      padding-right: 0px;
+   }
+}
+@media screen and (max-width: 1300px) {
+   .hero-content {
+      width: 100%;
+   }
+   .charge__wrapper-for-slick {
+      width: calc(100% + 200px);
+   }
+   .charge-slick__title {
+      font-size: 40px;
+      line-height: 50px;
+      margin-bottom: 10px;
+   }
+}
+@media screen and (max-width: 1100px) {
+   .charge__left {
+      width: 50%;
+   }
+   .charge__right {
+      width: 50%;
+   }
+   .charge__wrapper-for-slick {
+      width: calc(100% + 300px);
+   }
+}
+@media screen and (max-width: 992px) {
+   .hero {
+      padding-top: 130px;
+      padding-bottom: 52px;
+   }
+   .hero-text {
+      font-size: 28px;
+   }
+}
+@media screen and (max-width: 800px) {
+}
+@media screen and (max-width: 600px) {
+   .hero-text {
+      font-size: 22px;
+      margin-bottom: 40px;
+      line-height: 30px;
+   }
+   .hero-but  {
+      width: 140px;
+      height: 140px;
+   }
+}
+@media screen and (max-width: 500px) {
+}
+@media screen and (max-width: 374px) {
+   .hero {
+      padding-top: 60px;
+   }
+}
