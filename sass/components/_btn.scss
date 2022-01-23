@@ -1,0 +1,15 @@
+.btn-main {
+   border: 1px solid #000000;
+   box-sizing: border-box;
+   display: block;
+   width: 310px;
+   max-width: 100%;
+   line-height: 70px;
+   font-size: 20px;
+   text-align: center;
+   color: #000000;
+   &:hover {
+      background: #000000;
+      color: #ffffff;
+   }
+}
