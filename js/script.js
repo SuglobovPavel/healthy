@@ -108,10 +108,36 @@ $(document).ready(function(){
 
 
 
-
-
-
-
+    var lazyLoadInstance3 =  new  LazyLoad ({
+      elements_selector :  " .charge-lazy--modif" 
+      // ... больше пользовательских настроек? 
+  });
+    if($(window).width() < 800) {
+      $('.charge__right--flex').slick({
+        arrows: false,
+        slidesToShow: 1,
+        focusOnSelect: true,
+        autoplay: false,
+        autoplaySpeed: 3000,
+        dots: true,
+        infinite: true,
+        responsive: [                     
+          {
+            breakpoint: 1300,
+              settings: {
+            }
+          },
+          {
+            breakpoint: 700,
+              settings: {
+            }
+          },
+        ]
+      });
+      $('.charge__right--flex').on('afterChange', function(event, slick, currentSlide){
+        lazyLoadInstance3.update();	
+      });
+    }
 
 
 
